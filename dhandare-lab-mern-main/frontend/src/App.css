@@ -1,0 +1,66 @@
+/* REMOVED default Vite styles (#root max-width, text-align center)
+   because they break Dashboard/Sidebar layouts.
+*/
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* --- AESTHETIC UTILITIES --- */
+
+/* Use this class on your Dashboard Cards for a modern 'pop' effect */
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  border-radius: 1rem; /* Rounded corners are friendly */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-2px); /* Subtle lift on hover */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+}
+
+/* Use this for your Sidebar to make it stand out subtly */
+.sidebar-aesthetic {
+  background: #ffffff;
+  border-right: 1px solid #e2e8f0;
+  box-shadow: 4px 0 24px rgba(0, 0, 0, 0.02);
+}
+
+/* Soft Fade In Animation for Pages */
+.fade-in {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Patient Portal Specific: Calming Status Badges */
+.status-badge-success {
+  background-color: #dcfce7; /* Soft Mint Green */
+  color: #166534;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.status-badge-pending {
+  background-color: #fef9c3; /* Soft Yellow */
+  color: #854d0e;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}

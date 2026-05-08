@@ -1,0 +1,7 @@
+{
+  "name": "dhandare-lab-mern",
+  "version": "1.0.0",
+  "dependencies": {
+    "mongodb": "^7.0.0"
+  }
+}

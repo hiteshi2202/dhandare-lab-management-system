@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* GLOBAL RESETS & TYPOGRAPHY */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif; /* Clean, modern medical font */
+  background-color: #f8fafc; /* Very light slate-blue (easy on eyes) */
+  color: #334155; /* Soft dark gray instead of harsh black */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* CUSTOM SCROLLBAR (Makes the admin panel feel premium) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1; 
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8; 
+}
+
+/* UTILITY: Focus rings for accessibility but prettier */
+:focus-visible {
+  outline: 2px solid #3b82f6; /* Soft Blue */
+  outline-offset: 2px;
+}
